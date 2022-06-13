@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -d '{"returnFormat":"snort","page":"1","limit":"20000"}' -H "Authorization: I7TzZggfm8QhrQ2oOZeRckOoYqsrMQwQQx34rbjF" -H "Accept: application/json" -H "Content-type: application/json" -X POST https://localhost/attributes/restSearch >> /etc/snort/rules/misp_attribues.rules -k
